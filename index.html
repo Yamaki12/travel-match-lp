@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel Match – 航空券・ホテル・ツアー比較アプリ</title>
+  <meta name="description" content="Travel Matchは、航空券・ホテル・現地ツアーをまとめて比較・予約に進める個人開発アプリです。アフィリエイト提携先：Skyscanner / Trip.com / Klook / GetYourGuide。" />
+  <meta property="og:title" content="Travel Match – 航空券・ホテル・ツアー比較アプリ" />
+  <meta property="og:description" content="航空券・ホテル・ツアーを一括検索。個人開発のミニトラベルプラットフォーム。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:url" content="https://your-domain.example/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    :root { --bg:#0b1020; --panel:#101735; --ink:#e7ecff; --muted:#a6b0d4; --accent:#6ea8fe; }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.6;color:var(--ink);background:radial-gradient(1200px 800px at 80% -10%, #1c2460, #0b1020);} 
+    header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(6px);background:rgba(11,16,32,.6);border-bottom:1px solid rgba(255,255,255,.06);z-index:10}
+    .wrap{max-width:1000px;margin:0 auto;padding:20px}
+    .brand{display:flex;gap:12px;align-items:center;font-weight:700}
+    .brand .logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#5bd,#7df);display:inline-block}
+    nav{margin-left:auto}
+    .hero{padding:90px 20px 40px;text-align:center}
+    h1{font-size:clamp(28px, 3.6vw, 48px);margin:0 0 12px}
+    .lead{color:var(--muted);font-size:clamp(16px,2.3vw,20px)}
+    .cta{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .btn{appearance:none;border:none;border-radius:12px;padding:12px 18px;font-weight:600;cursor:pointer}
+    .btn.primary{background:linear-gradient(135deg,#5bd,#7df);color:#00102a}
+    .btn.ghost{background:transparent;color:var(--ink);border:1px solid rgba(255,255,255,.18)}
+    .panel{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:16px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    section{padding:40px 20px}
+    h2{margin:0 0 10px}
+    .muted{color:var(--muted)}
+    footer{padding:30px 20px;color:var(--muted);border-top:1px solid rgba(255,255,255,.08)}
+    .ss{height:260px;border-radius:12px;background:linear-gradient(135deg, rgba(110,168,254,.25), rgba(110,168,254,.05));border:1px dashed rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:var(--muted)}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .kpis{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:18px}
+    .kpis .k{padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04)}
+    .badges{display:flex;gap:10px;justify-content:center;margin-top:18px;color:var(--muted);font-size:14px}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Travel Match",
+    "applicationCategory": "TravelApplication",
+    "operatingSystem": "iOS, Android, Web",
+    "description": "航空券・ホテル・現地ツアーをまとめて検索できる旅行比較アプリ。",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"},
+    "creator": {"@type": "Person", "name": "Masaaki Yamakita"}
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="wrap" style="display:flex;align-items:center;gap:16px">
+      <div class="brand"><span class="logo"></span><span>Travel Match</span></div>
+      <nav style="margin-left:auto;display:flex;gap:14px">
+        <a href="#features">機能</a>
+        <a href="#affiliates">提携先</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>航空券・ホテル・ツアーを<br/>一括で比較</h1>
+      <p class="lead">個人開発のミニ・トラベルプラットフォーム。予約は各公式サイトへ安全に遷移します。</p>
+      <div class="kpis">
+        <div class="k">航空券：Skyscannerに接続</div>
+        <div class="k">ホテル：Trip.comに接続</div>
+        <div class="k">ツアー：Klook / GetYourGuideに接続</div>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#features">使える機能を見る</a>
+        <a class="btn ghost" href="#contact">提携・お問い合わせ</a>
+      </div>
+      <div class="badges">App Store / Google Play 近日公開予定</div>
+    </section>
+
+    <section id="features" class="wrap">
+      <h2>主な機能</h2>
+      <p class="muted">MVP段階ではディープリンク中心。将来的にアプリ内検索UIを拡充します。</p>
+      <div class="grid">
+        <div class="panel" style="padding:16px">
+          <h3>フライト検索</h3>
+          <p class="muted">出発地・目的地・日付を入力するとSkyscannerの検索結果へ遷移します。</p>
+          <div class="ss">スクリーンショットを配置</div>
+        </div>
+        <div class="panel" style="padding:16px">
+          <h3>ホテル検索</h3>
+          <p class="muted">都市・日付・人数からTrip.comにディープリンク。</p>
+          <div class="ss">スクリーンショットを配置</div>
+        </div>
+        <div class="panel" style="padding:16px">
+          <h3>現地ツアー</h3>
+          <p class="muted">Klook / GetYourGuideの商品ページへ送客。日本語対応も充実。</p>
+          <div class="ss">スクリーンショットを配置</div>
+        </div>
+        <div class="panel" style="padding:16px">
+          <h3>旅程の保存（任意）</h3>
+          <p class="muted">選んだ候補をメモとして保存。将来はアプリ内おすすめを追加予定。</p>
+          <div class="ss">スクリーンショットを配置</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="affiliates" class="wrap">
+      <h2>アフィリエイト提携先</h2>
+      <p class="muted">以下の公式パートナープログラムと提携予定/申請中です。</p>
+      <div class="grid">
+        <div class="panel" style="padding:16px">
+          <h3>Skyscanner</h3>
+          <p class="muted">航空券メタサーチのディープリンク/ウィジェットを利用。</p>
+          <a href="https://partners.skyscanner.net" target="_blank" rel="noopener">提携ページ</a>
+        </div>
+        <div class="panel" style="padding:16px">
+          <h3>Trip.com</h3>
+          <p class="muted">ホテル・フライトを一括送客。リンク生成が容易。</p>
+          <a href="https://affiliate.trip.com" target="_blank" rel="noopener">提携ページ</a>
+        </div>
+        <div class="panel" style="padding:16px">
+          <h3>Klook</h3>
+          <p class="muted">現地アクティビティが強み。日本語リソース豊富。</p>
+          <a href="https://affiliate.klook.com" target="_blank" rel="noopener">提携ページ</a>
+        </div>
+        <div class="panel" style="padding:16px">
+          <h3>GetYourGuide</h3>
+          <p class="muted">欧米圏のツアーに強い大手プラットフォーム。</p>
+          <a href="https://partner.getyourguide.com" target="_blank" rel="noopener">提携ページ</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap">
+      <h2>お問い合わせ</h2>
+      <p class="muted">提携・メディア・機能リクエストはメールでご連絡ください。</p>
+      <div class="panel" style="padding:16px">
+        <p>メール: <a href="mailto:hello@your-domain.example">hello@your-domain.example</a></p>
+        <p class="muted" style="font-size:14px">※ 本サイトは開発中アプリの紹介ページです。予約・決済は各公式サイトで行われます。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap" style="display:grid;gap:8px">
+      <div>© <span id="y"></span> Travel Match</div>
+      <div style="font-size:14px">プライバシーポリシー（準備中） ・ 運営者情報（準備中）</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
